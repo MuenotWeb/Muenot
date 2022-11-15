@@ -184,7 +184,7 @@ a:hover{
 
 
 /* About Section*/
-.btn-play {
+/* .btn-play {
     position: relative;
     display: block;
     box-sizing: content-box;
@@ -267,7 +267,168 @@ a:hover{
     color: #fff;
     background: #000;
     opacity: 1;
-  }
+  } */
+  .about-section {
+    position: relative;
+    padding: 90px 0 40px;
+    height: 100vh;
+}
+
+.about-section .content-column {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.about-section .content-column .inner-column {
+    position: relative;
+    padding-top: 60px;
+    padding-left: 5px;
+}
+
+.about-section .content-column p {
+    margin-bottom: 24px;
+}
+
+.about-section .content-column .btn-box {
+    position: relative;
+    margin-top: 40px;
+}
+
+.about-section .image-column {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.about-section .about-image-wrapper {
+    position: relative;
+    padding-top: 150px;
+    max-width: 570px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.about-section .image-1 {
+    position: relative;
+    margin-left: -180px;
+    overflow: hidden;
+    margin-bottom: 0;
+    z-index: -1;
+}
+
+.about-section .image-1 img {
+    -webkit-animation: bounce-x 10s infinite;
+    animation: bounce-x 10s infinite;
+}
+
+.about-section .image-2 {
+    position: absolute;
+    right: 0;
+    bottom: -500px;
+    z-index: 3;
+    border-radius: 50%;
+    border: 30px solid #fd00c5;
+    overflow: hidden;
+}
+
+.about-section .image-3 {
+    position: absolute;
+    border: 30px solid #ffae00;
+    top: -100px;
+    left: -50px;
+    z-index: 2;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.about-section .about-image-wrapper .play-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 3;
+    width: 140px;
+    height: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-left: -20px;
+    border-radius: 50%;
+}
+
+.about-section .about-image-wrapper .play-btn:before {
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    border: 2px dashed #001376;
+    border-radius: 50%;
+    left: 16px;
+    top: 16px;
+    content: "";
+    -webkit-animation: zoomInOut 2s infinite;
+    animation: zoomInOut 2s infinite;
+}
+
+.about-section .about-image-wrapper .play-btn .icon {
+    position: relative;
+    height: 75px;
+    width: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #001376;
+    padding-left: 5px;
+    color: #ffffff;
+    font-size: 22px;
+    border-radius: 50%;
+    content: "";
+}
+
+@-webkit-keyframes zoomInOut {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(.9);
+        transform: scale(.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomInOut {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(.9);
+        transform: scale(.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+
+
+
 /* -------------------------------------------- */
 
 /* services section */
@@ -496,8 +657,6 @@ a:hover{
 /* ------------------------------------- */
 
 
-
-
 /* footer section */
 .footer{
    color: #fff!important;
@@ -510,4 +669,16 @@ a:hover{
   z-index: 11;
   animation: action 1s infinite alternate;
 }
+.wp_float{
+  position: fixed;
+  bottom: 80px;
+  right: 35px;
+  display: flex;
+  align-items: center;
+  z-index: 11;
+}
+.wp_float img{
+  width: 40px;
+}
+
 /* --------------------------------------- */

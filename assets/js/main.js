@@ -44,6 +44,11 @@ function myFunction() {
       );
     }),
     o('[data-toggle="counter-up"]').counterUp({ delay: 10, time: 2e3 }),
+    o(window).scroll(function () {
+      o(this).scrollTop() > 100
+        ? o(".wp_float").fadeIn("slow")
+        : o(".wp_float").fadeOut("slow");
+    }),
     o(document).ready(function () {
       var t;
       o(".btn-play").click(function () {
