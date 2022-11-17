@@ -49,6 +49,11 @@ function myFunction() {
         ? o(".wp_float").fadeIn("slow")
         : o(".wp_float").fadeOut("slow");
     }),
+
+
+
+
+
     o(document).ready(function () {
       var t;
       o(".btn-play").click(function () {
@@ -62,9 +67,16 @@ function myFunction() {
           );
         }),
         o("#videoModal").on("hide.bs.modal", function (n) {
-          o("#video").attr("src", '');
+          o("#video").attr("src", t);
         });
     }),
+
+
+
+
+
+
+
     o(".testimonial-carousel").owlCarousel({
       center: !0,
       autoplay: !0,
