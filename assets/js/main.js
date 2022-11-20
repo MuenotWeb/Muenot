@@ -15,8 +15,6 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-
 !(function (o) {
   "use strict";
   o(document).ready(function () {
@@ -49,11 +47,6 @@ function myFunction() {
         ? o(".wp_float").fadeIn("slow")
         : o(".wp_float").fadeOut("slow");
     }),
-
-
-
-
-
     o(document).ready(function () {
       var t;
       o(".btn-play").click(function () {
