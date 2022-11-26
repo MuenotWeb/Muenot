@@ -1,2 +1,0 @@
-# Muenot
- Sample Website

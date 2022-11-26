@@ -725,7 +725,7 @@ a:hover{
 
 .whiterect{
   position: relative;
-  background color: #000;
+  background-color: #000;
   height: 200px;
 }
 .clients-section.alternate2 {
@@ -811,5 +811,9 @@ a:hover{
 .wp_float img{
   width: 40px;
 }
+ #Thanks{
+  color: red;
+  display: none;
+ }
 
-/* --------------------------------------- */
+
