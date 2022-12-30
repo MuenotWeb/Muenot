@@ -525,7 +525,8 @@ a#logo {
   transform: translateY(-4px);
 }
 #forgot_pw {
-  background-color: #000;
+  background-color: #da9c00;
+  color: green;
   position: absolute;
   left: 0;
   top: 0;
@@ -556,6 +557,15 @@ a#logo {
   background-color: #fff;
   min-height: 100vh;
   z-index: 99;
+}
+#forgot_pw h4{
+  color: #111;
+}
+.float-start{
+  float: left!important;
+}
+.float-end{
+  float: right!important;
 }
 .panel figure {
   margin: 0 0 15px 0;

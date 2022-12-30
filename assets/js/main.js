@@ -92,7 +92,3 @@ function myFunction() {
       },
     });
 })(jQuery);
-
- function thanks(){
-  document.getElementById('Thanks').style.color = 'red'; 
- }
