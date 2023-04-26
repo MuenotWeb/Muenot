@@ -1,89 +1,1220 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!Doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Muenot - Ed-tech,IT and Business Solutions</title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Place favicon.ico in the root directory -->
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.20.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.20.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.20.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.20.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.20.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.20.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.20.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.20.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.20.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.20.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/swipper.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<body>
+    <!-- sidebar-information-area-start -->
+    <div class="sidebar-info side-info">
+        <div class="sidebar-logo-wrapper">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-8">
+                    <div class="sidebar-logo">
+                        <a href="index-2.html"><img src="assets/img/logo/logo.png" alt="logo-img"></a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-4">
+                    <div class="sidebar-close-wrapper text-end">
+                        <button class="sidebar-close side-info-close"><i class="fal fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-menu-wrapper fix">
+            <div class="mobile-menu"></div>
+        </div>
+
+        <div class="sidebar-contact-wrapper mt-40">
+            <div class="sidebar-contact mb-40">
+                <h4 class="sidebar-contact-title">Contact Info</h4>
+                <span class="sidebar-address"><i class="fal fa-map-marker-alt"></i><span> Jhunjhunu,india</span> </span>
+                <a href="tel:+1(251)410-1010"><i class="fal fa-phone"></i><span>(+91)-6377809826</span></a>
+                <a href="mailto:example@gmail.com" class="theme-3"><i class="fal fa-envelope"></i><span><span>contact@muenot.co.in</span></span></a>
+            </div>
+        </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <div class="offcanvas-overlay"></div>
+    <!-- sidebar-information-area-end -->
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- header area start -->
+    <header>
+        <div class="ns-header-area">
+            <div class="ns-header-topbar ns-header-topbar-2 d-none d-md-block">
+                <div class="ns-header-topbar-wrap-2 container">
+                    <div class="ns-header-topbar-left ns-header-topbar-left-2">
+                        <span class="ns-header-topbar-shape"></span>
+                        <span>Visit our social pages:</span>
+                        <div class="ns-header-topbar-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/company/muenot/mycompany/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+                        </div>
+                    </div>
+                    <div class="ns-header-topbar-right ns-header-topbar-right-2">
+                        <div class="ns-header-topbar-lan-img">
+                            <img src="assets/img/bg/flag.png" alt="Not Found ">
+                        </div>
+                        <div class="ns-header-topbar-lan">
+                            <select name="Language" class="has-nice-select">
+                                    <option value="1">English</option>
+                                    <option value="2">Hindi</option>
+                                    <option value="3">Arabic</option>
+                                    <option value="4">Japanese</option>
+                                </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ns-header-navbar ns-header-navbar-2 container">
+                <div class="row align-items-center">
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-6">
+                        <div class="ns-header-logo-2">
+                            <a href="index.html"><img src="assets/img/logo/logo.png" alt="Not Found"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-10 col-lg-10 col-md-8 col-6">
+                        <div class="ns-header-menu-2">
+                            <nav class="ns-header-main-menu mobile-menu d-none d-lg-block" id="mobile-menu">
+                                <ul>
+
+                                    <li class="menu-has-child">
+
+                                        <!--    <ul class="submenu">
+                                            <li><a href="index.html">Home 1</a></li>
+                                            <li><a href="index-2.html">Home 2</a></li>
+                                            <li><a href="index-3.html">Home 3</a></li>
+                                            <li><a href="index-4.html">Home 4</a></li>
+                                            <li><a href="index-5.html">Home 5</a></li>
+                                            <li><a href="index-6.html">Home 6</a></li>
+                                        </ul>
+                                    -->
+                                    </li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li class="menu-has-child">
+                                        <a href="#">Services</a>
+                                        <ul class="submenu">
+                                            <li><a href="itservices.html">IT Services</a></li>
+                                            <li><a href="edtech.html">Ed-tech Services</a></li>
+                                            <li><a href="financial.html">Financial Services</a></li>
+
+                                            <li><a href="localization.html">Localization Services</a></li>
+
+                                            <li><a href="editorial.html">Editorial <span>& Press Services</span></a></li>
+
+                                            <li><a href="media.html">Accessibility <span>& Writing Services</span> </a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="menu-has-child">
+                                        <a href="#">View Sample</a>
+                                        <ul class="submenu">
+                                            <li><a href="">Alt Text</a></li>
+                                            <li><a href="">Video Explaination</a></li>
+                                            <li><a href="">Text Book Solutions</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="career.html">Career</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                            <div class="ns-header-menu-right">
+                                <div class="ns-header-menu-action">
+                                    <a href="#" class="ns-header-action-search"><i class="fal fa-search"></i></a>
+                                </div>
+                                <div class="ns-header-menu-btn d-none d-xl-block">
+                                    <a href="contact.html" class="ns-header-btn ns-theme-btn">Sign In <i class="fal fa-arrow-right"></i></a>
+                                </div>
+                                <div class="menu-bar d-lg-none">
+                                    <div class="navbar-sign side-toggle ml-20">
+                                        <i class="fal fa-bars"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header area end -->
+
+    <!-- search start area -->
+    <div class="ba-search-popup">
+        <div class="ba-color-layer"></div>
+        <div class="ba-search-popup-inner">
+            <form action="#">
+                <input type="text" placeholder="Search here..." name="search" id="search-input">
+                <button type="submit"><i class="fal fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <!-- search start end -->
+
+    <main>
+        <!-- banner area start -->
+        <section class="ns-banner-area-2">
+            <div class="ns-banner-single-2 bg-default" data-background="assets/img/banner/bg-1.png">
+                <img src="assets/img/banner/home-2-shape-1.png" alt="Not Found" class="ns-banner-shape-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-10">
+                            <div class="ns-banner-content-2">
+                                <img src="assets/img/banner/banner-map-2.png" alt="" class="ns-banner-content-map-2">
+                                <img src="assets/img/banner/banner-shape-img-2.png" alt="" class="ns-banner-content-img-2">
+                                <span class="ns-banner-content-shape-2 d-none d-md-block"></span>
+                                <span class="ns-banner-content-subtitle ns-home-2">Welcome To Muenot</span>
+                                <h2 class="ns-banner-content-title ns-home-2">
+                                    Solution For Businesses.
+                                </h2>
+                                <p style="text-align: justify;">At Muenot, we understand the importance of high-quality content for businesses. Whether you're a small startup or a large corporation, our comprehensive content solutions can help you achieve your business objectives and
+                                    enhance your online presence.</p>
+                                <div class="ns-banner-action-btn ns-home-2">
+                                    <a href="contact.html" class="ns-header-btn ns-theme-btn ns-home-2">Contact Us <i class="fal fa-arrow-right"></i></a>
+                                    <a href="" class="ns-play-btn popup-video ns-home-2"><i class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner area end -->
+
+        <!-- about area start -->
+        <section class="ns-about-area-2 pt-115 pb-75 p-relative">
+            <img src="assets/img/about/home-2_about-shape-1.png" alt="" class="ns-about-img-shape-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="ns-about-img-2 mb-40">
+                            <div class="ns-about-main-img-2">
+                                <img src="assets/img/about/h-about-1.jpg" alt="">
+                                <a class="ns-about-play-btn-2 popup-video" href=""><img src="assets/img/about/play-btn.png" alt="Not Found"></a>
+                            </div>
+                            <img class="ns-about-inner-img-21  d-none d-sm-block" src="assets/img/about/h-about-2.jpg" alt="">
+                            <img class="ns-about-inner-img-22  d-none d-sm-block" src="assets/img/about/h-about-3.jpg" alt="">
+                            <img src="assets/img/about/home-2_about-cirlcle-2.png" alt="" class="ns-about-img-circle-2 d-none d-md-block">
+
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="ns-about-wrap-2 mb-40">
+                            <div class="ns-section mb-25">
+                                <span class="ns-section-subtitle">About Muenot</span>
+                                <h2 class="ns-section-title mb-15">3+ years of experience as Business Solutions Provider</h2>
+                                <p class="ns-section-text mb-0" style="text-align: justify;">At Muenot, we take pride in our 3+ years of experience as a business solutions provider. During this time, we have built a strong reputation for delivering high-quality solutions that meet the specific needs of our clients.
+                                    Our focus on quality, expertise, and timely delivery has helped us earn the trust and loyalty of our clients, and we continue to strive for excellence in everything we do.</p>
+                            </div>
+                            <div class="ns-about-tab-wrap-2">
+                                <div class="tab-content ns-about-tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="ns-about-content-top-2">
+                                            <div class="ns-about-content-info-2 bg-default" data-background="assets/img/about/about-content-bg-2.png">
+                                                <div class="ns-about-content-info-top-2">
+                                                    <div class="ns-about-content-info-counter-2">
+                                                        <h5 class="ns-about-count-2">
+                                                            <span class="odometer about_count" data-count="3">00</span><span class="ns-about-plus">+</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="ns-about-content-info-icon-2">
+                                                        <img src="assets/img/about/headphones-2.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h5 class="ns-about-content-info-text-2">Experience</h5>
+                                            </div>
+                                            <div class="ns-about-content-list-2">
+                                                <ul>
+                                                    <li><i class="icofont-tick-boxed"></i>Provide customized and high-quality solutions.</li>
+                                                    <li><i class="icofont-tick-boxed"></i>Help businesses achieve growth and enhance their online presence.</li>
+                                                    <li><i class="icofont-tick-boxed"></i>Deliver a seamless and personalized content outsourcing experience.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        <div class="ns-about-content-top-2">
+                                            <div class="ns-about-content-info-2 bg-default" data-background="assets/img/about/about-content-bg-2.png">
+                                                <div class="ns-about-content-info-top-2">
+                                                    <div class="ns-about-content-info-counter-2">
+                                                        <h5 class="ns-about-count-2">
+                                                            <span class="odometer about_count" data-count="3">00</span><span class="ns-about-plus">+</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="ns-about-content-info-icon-2">
+                                                        <img src="assets/img/about/headphones-2.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h5 class="ns-about-content-info-text-2">Experience</h5>
+                                            </div>
+                                            <div class="ns-about-content-list-2">
+                                                <ul>
+                                                    <li><i class="icofont-tick-boxed"></i>To be a trusted and innovative provider of comprehensive solutions.</li>
+                                                    <li><i class="icofont-tick-boxed"></i>To empower businesses to succeed in the digital world through effective solutions.</li>
+                                                    <li><i class="icofont-tick-boxed"></i>To be a leader in the outsourcing industry, delivering exceptional value and service.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                        <div class="ns-about-content-top-2">
+                                            <div class="ns-about-content-info-2 bg-default" data-background="assets/img/about/about-content-bg-2.png">
+                                                <div class="ns-about-content-info-top-2">
+                                                    <div class="ns-about-content-info-counter-2">
+                                                        <h5 class="ns-about-count-2">
+                                                            <span class="odometer about_count" data-count="3">00</span><span class="ns-about-plus">+</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="ns-about-content-info-icon-2">
+                                                        <img src="assets/img/about/headphones-2.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h5 class="ns-about-content-info-text-2">Experience</h5>
+                                            </div>
+                                            <div class="ns-about-content-list-2">
+                                                <ul>
+                                                    <li><i class="icofont-tick-boxed"></i>Comprehensive one stop solution for all digital needs.</li>
+                                                    <li><i class="icofont-tick-boxed"></i>Personalized approach for customized solutions.</li>
+                                                    <li><i class="icofont-tick-boxed"></i>The highest standards of quality, promptness, and support.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="nav nav-tabs ns-about-tab-btn" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                                                <span class="ns-about-tab-item-2 ">
+                                                    <span class="ns-about-tap-item-title-2">Our Mission</span>
+                                                </span>
+                                            </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                                <span class="ns-about-tab-item-2">
+                                                    <span class="ns-about-tap-item-title-2">Our Vision</span>
+                                                </span>
+                                            </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                                                <span class="ns-about-tab-item-2">
+                                                    <span class="ns-about-tap-item-title-2">Why Muenot?</span>
+                                                </span>
+                                            </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about area end -->
+
+        <!-- services area start -->
+        <div class="ns-recent-area pt-110 pb-115">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="ns-section mb-50 text-center">
+                            <span class="ns-section-subtitle">What We Do</span>
+                            <h2 class="ns-section-title mb-0">Our Offered Services</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="ns-recent-item pb-40">
+                            <img src="assets/img/recent/recent-shape-1.png" alt="" class="ns-recent-item-shape-1">
+                            <div class="ns-recent-item-img">
+                                <img src="assets/img/service/IT-1.png" alt="">
+                                <span>01</span>
+                            </div>
+                            <div class="ns-recent-item-content">
+                                <h4 class="ns-recent-title"><a href="itservices.html">IT Solutions</a></h4>
+                                <p style="text-align: justify;">Leverage technology for enhanced productivity, efficiency, and security with our IT services, including software development, cybersecurity, network setup and maintenance, cloud solutions, and more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="ns-recent-item pb-40">
+                            <img src="assets/img/recent/recent-shape-2.png" alt="" class="ns-recent-item-shape-2">
+                            <div class="ns-recent-item-img">
+                                <img src="assets/img/service/edtech-2.png" alt="">
+                                <span class="ns-recent-count-2">02</span>
+                            </div>
+                            <div class="ns-recent-item-content">
+                                <h4 class="ns-recent-title"><a href="edtech.html">Ed-tech Solutions</a></h4>
+                                <p style="text-align: justify;">Deliver Quality elearning experiences with our Ed-Tech services,including content creation,Test Prep, instructional design, LMS setup and maintenance, and more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="ns-recent-item pb-40">
+                            <img src="assets/img/recent/recent-shape-3.png" alt="" class="ns-recent-item-shape-3">
+                            <div class="ns-recent-item-img">
+                                <img src="assets/img/service/financial-1.jpg" alt="">
+                                <span>03</span>
+                            </div>
+                            <div class="ns-recent-item-content">
+                                <h4 class="ns-recent-title"><a href="financial.html">Financial Solutions</a></h4>
+                                <p style="text-align: justify;">Muenot Deal in finance services from registration to compliance.Our Financial services includes book keeping, accounting, tax planning, budgeting, and more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="ns-recent-item pb-40">
+                            <div class="ns-recent-item-img">
+                                <img src="assets/img/service/media-1.png" alt="">
+                                <span>04</span>
+                            </div>
+                            <div class="ns-recent-item-content">
+                                <h4 class="ns-recent-title"><a href="media.html">Media Solutions</a></h4>
+                                <p style="text-align: justify;">Enhance your online presence and engage your target audience through effective content strategies with our Media services, including content writing, design and animation, video production and more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="ns-recent-area-btn text-center">
+                            <a href="project.html" class="ns-recent-btn ns-theme-btn">View More About Services <i class="fal fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- services area end -->
+
+        <!-- our resources area start -->
+        <section class="ns-service-area-2 pt-110 pb-115 p-relative">
+            <img src="assets/img/service/home-2_service-bg.jpg" alt="" class="ns-service-bg-img-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="ns-section mb-50 text-center">
+                            <span class="ns-section-subtitle">Our Resources</span>
+                            <h2 class="ns-section-title mb-0">Our Resources Included</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="ns-service-wrap-2">
+                    <div class="swiper-container service-active-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="ns-service-item ns-service-item-2">
+                                    <div class="ns-service-img ns-service-img-2 w_img">
+                                        <a href="project-details.html"><img src="assets/img/service/educator.png" alt="Not Found"></a>
+                                        <div class="ns-service-content-icon ns-service-content-icon-2">
+                                            <i class="icofont-mega-phone"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ns-service-content ns-service-content-2">
+                                        <h4 class="ns-service-content-title ns-service-content-title-2"><a href="project-details.html">Educators</a></h4>
+                                        <p style="text-align: justify;">Our team of educators brings years of experience in the education industry to develop high-quality educational content and training programs. They collaborate with our clients to understand their unique needs and
+                                            create tailored solutions that deliver real results.
+                                        </p>
+                                        <a href="project-details.html" class="ns-service-btn ns-service-btn-2">Read More<i class="icofont-plus"></i></a>
+                                        <span class="ns-service-shape-1 ns-service-shape-21"></span>
+                                        <span class="ns-service-shape-2 ns-service-shape-22"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ns-service-item ns-service-item-2">
+                                    <div class="ns-service-img ns-service-img-2 w_img">
+                                        <a href="project-details.html"><img src="assets/img/service/contentwriter.png" alt="Not Found"></a>
+                                        <div class="ns-service-content-icon ns-service-content-icon-2">
+                                            <i class="icofont-bars"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ns-service-content ns-service-content-2">
+                                        <h4 class="ns-service-content-title ns-service-content-title-2"><a href="project-details.html">Content Writers</a></h4>
+                                        <p style="text-align: justify;">Our team of content writers produces high-quality content that engages and informs audiences across a variety of industries. They work closely with our clients to understand their brand voice and messaging and create
+                                            content that aligns with their business objectives.
+                                        </p>
+                                        <a href="project-details.html" class="ns-service-btn ns-service-btn-2">Read More<i class="icofont-plus"></i></a>
+                                        <span class="ns-service-shape-1 ns-service-shape-21"></span>
+                                        <span class="ns-service-shape-2 ns-service-shape-22"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ns-service-item ns-service-item-2">
+                                    <div class="ns-service-img ns-service-img-2 w_img">
+                                        <a href="project-details.html"><img src="assets/img/service/graphic-d-1.png" alt="Not Found"></a>
+                                        <div class="ns-service-content-icon ns-service-content-icon-2">
+                                            <i class="icofont-contrast"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ns-service-content ns-service-content-2">
+                                        <h4 class="ns-service-content-title ns-service-content-title-2"><a href="project-details.html">Graphic Designers</a></h4>
+                                        <p style="text-align: justify;">Our team of graphic designers creates eye-catching visuals that capture the attention of target audiences and communicate messages effectively. They work closely with our clients to understand their branding and
+                                            design preferences and create stunning designs that reflect their brand.
+                                        </p>
+                                        <a href="project-details.html" class="ns-service-btn ns-service-btn-2">Read More<i class="icofont-plus"></i></a>
+                                        <span class="ns-service-shape-1 ns-service-shape-21"></span>
+                                        <span class="ns-service-shape-2 ns-service-shape-22"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ns-service-bottom ns-service-bottom-2 mt-50">
+                        <div class="ns-service-pagination ns-service-pagination-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- our resources area end -->
+
+
+        <!-- cta area start -->
+        <div class="ns-cta-area-2 pt-100 pb-60 bg-default" data-background="assets/img/bg/bg-1.jpg">
+            <h2 style="text-align: center;color: Orange;position: relative;text-decoration: solid ;text-transform: uppercase;">Our Work So Far</h2>
+            <div style="height: 80px;position: relative;margin-top: 0px;margin-bottom: 20px;display: flex;width: 60%;margin-left: 20%;margin-right: 20%;">
+                <h3 style="color: white;font-size: 20px;position: relative;margin-left: 50px;margin-right: 0px; margin-top: 10px;text-align: center;">80000+
+                    <br>Video Solutions
+                </h3>
+                <h3 style="color: white;font-size: 20px;position: relative;margin-left: 40px; margin-top: 10px;text-align: center;">45000+
+                    <br>Text Book Solutions
+                </h3>
+                <h3 style="color: white;font-size: 20px;position: relative;margin-left: 50px; margin-top: 10px;text-align: center;">13000+
+                    <br>Concept Notes Done
+                </h3>
+                <h3 style="color: white;font-size: 20px;position:relative;margin-left: 50px; margin-top: 10px;text-align: center;">70000+
+                    <br>Alt Text
+                </h3>
+            </div>
+            <div style="height: 80px;position: relative;margin-top: 0px;margin-bottom: 20px;display: flex;width: 60%;margin-left: 20%;margin-right: 20%;">
+                <h3 style="color: white;font-size: 20px;position: relative;margin-left: 50px;margin-right: 0px; margin-top: 10px;text-align: center;">50000+
+                    <br>CMS Uploads
+                </h3>
+                <h3 style="color: white;font-size: 20px;position: relative;margin-left: 40px; margin-top: 10px;text-align: center;">2000+
+                    <br>Live Tutoring Classes
+                </h3>
+                <h3 style="color: white;font-size: 20px;position: relative;margin-left: 50px; margin-top: 10px;text-align: center;">1800+
+                    <br>Animation Created
+                </h3>
+                <h3 style="color: white;font-size: 20px;position:relative;margin-left: 50px; margin-top: 10px;text-align: center;">2000+
+                    <br>Test Delivered
+                </h3>
+            </div>
+
+        </div>
+
+
+
+        <!-- cta area end -->
+
+        <!-- Achievements Start -->
+
+
+
+        <section class="achievement-section">
+            <figure class="service-rightlayer mb-0">
+                <img src="assets/img/achivement/service-leftlayer.png" alt="" class="img-fluid">
+            </figure>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                        <div class="achievement_content" data-aos="fade-right">
+                            <figure class="offer-circleimage mb-0">
+                                <img src="assets/img/achivement/offer-circleimage.png" alt="" class="img-fluid">
+                            </figure>
+                            <h6>Achievements</h6>
+                            <h2>Some Number of Our Achievements</h2>
+                            <p style="text-align: justify;">At Muenot, we take pride in our achievements and are committed to delivering exceptional results to our clients. Over the years, we have helped our clients achieve their business goals and improve their online presence through
+                                our various services. We continue to strive for excellence in all that we do, and we look forward to achieving even greater success in the years to come. </p>
+                            <a class="get_started text-white text-decoration-none" href="./about.html">Get Started
+                        <figure class="mb-0"><img src="assets/img/achivement/button-arrow.png" alt="" class="img-fluid"></figure>
+                    </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                        <div class="achievement_wrapper">
+                            <div class="achievement-box box1">
+                                <figure class="icon achievement-icon">
+                                    <img src="assets/img/achivement/achievement-clienticon.png" alt="" class="img-fluid">
+                                </figure>
+                                <div class="wrapper">
+                                    <h3>30+</h3>
+                                    <p class="text-size-18 mb-0">Satisfied Clients</p>
+                                </div>
+                            </div>
+                            <div class="achievement-box box2">
+                                <figure class="icon1 achievement-icon">
+                                    <img src="assets/img/achivement/achievement-projecticon.png" alt="" class="img-fluid">
+                                </figure>
+                                <div class="wrapper">
+                                    <h3>50+</h3>
+                                    <p class="text-size-18 mb-0">Projects Completed</p>
+                                </div>
+                            </div>
+                            <div class="achievement-box box3">
+                                <figure class="icon achievement-icon">
+                                    <img src="assets/img/achivement/achievement-teamicon.png" alt="" class="img-fluid">
+                                </figure>
+                                <div class="wrapper">
+                                    <div class="number number1">
+                                        <h3 class="value counter">90</h3>
+                                        <span class="plus">+</span>
+                                    </div>
+                                    <p class="text text-size-18 mb-0">Team Members</p>
+                                </div>
+                            </div>
+                            <div class="achievement-box box4">
+                                <figure class="icon1 achievement-icon">
+                                    <img src="assets/img/achivement/achievement-awardicon.png" alt="" class="img-fluid">
+                                </figure>
+                                <div class="wrapper">
+                                    <div class="number">
+                                        <h3 class="value counter">3</h3>
+                                        <span class="plus">+</span>
+                                    </div>
+                                    <p class="text text-size-18 mb-0">Awards Win</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <figure class="service-leftlayer mb-0">
+                <img src="assets/img/achivement/service-rightlayer.png" alt="" class="img-fluid">
+            </figure>
+        </section>
+
+        <!-- Achievements End -->
+
+
+        <!-- team area start -->
+        <section class="ns-team-area pt-110 pb-110 ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-12 ">
+                        <div class="ns-section mb-50 text-center ">
+                            <span class="ns-section-subtitle ">Team Member</span>
+                            <h2 class="ns-section-title mb-0 ">Amazing Team Members</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container team-active ">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide ">
+                            <div class="ns-team-item ">
+                                <div class="ns-team-item-img w_img ">
+                                    <a href="team-details.html "><img src="assets/img/team/nishtha.jpeg " alt=" "></a>
+                                </div>
+                                <div class="ns-team-item-content ">
+                                    <div class="ns-team-social ">
+                                        <div class="ns-team-social-btn ">
+                                            <span class="ns-team-social-plus ns-team-social-btn-icon "><i class="fal fa-plus "></i></span>
+                                            <span class="ns-team-social-minus ns-team-social-btn-icon "><i class="fal fa-minus "></i></span>
+                                        </div>
+                                        <div class="ns-team-social-btn d-none ">
+                                            <span class="ns-team-social-plus ns-team-social-btn-icon "><i class="icofont-plus "></i></span>
+                                            <span class="ns-team-social-minus ns-team-social-btn-icon "><i class="icofont-minus "></i></span>
+                                        </div>
+                                        <div class="ns-team-social-icon ">
+                                            <ul>
+                                                <li><a href="# "><i class="fab fa-facebook-f "></i></a></li>
+                                                <li><a href="# "><i class="fab fa-twitter "></i></a></li>
+                                                <li><a href="# "><i class="fab fa-instagram "></i></a></li>
+                                                <li><a href="# "><i class="fab fa-behance "></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="ns-team-item-info ">
+                                        <h5 class="ns-team-info-title "><a href="team-details.html ">Nishtha Taneja</a></h5>
+                                        <span>Operations Executive</span>
+                                    </div>
+                                    <div class="ns-team-item-contact ">
+                                        <!--<a href="tel:+015545454 "><i class="icofont-phone "></i></a>-->
+                                        <!--<a href="mailto:info@mail.com "><i class="icofont-envelope-open "></i>nishtha@muenot.co.in</a>-->
+                                    </div>
+                                </div>
+                                <span class="ns-team-shape-1 ns-team-shape "></span>
+                                <span class="ns-team-shape-2 ns-team-shape "></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="ns-team-item ">
+                                <div class="ns-team-item-img w_img ">
+                                    <a href="team-details.html "><img src="assets/img/team/sandeep.jpeg " alt=" "></a>
+                                </div>
+                                <div class="ns-team-item-content ">
+                                    <div class="ns-team-social ">
+                                        <div class="ns-team-social-btn ">
+                                            <span class="ns-team-social-plus ns-team-social-btn-icon "><i class="fal fa-plus "></i></span>
+                                            <span class="ns-team-social-minus ns-team-social-btn-icon "><i class="fal fa-minus "></i></span>
+                                        </div>
+                                        <div class="ns-team-social-btn d-none ">
+                                            <span class="ns-team-social-plus ns-team-social-btn-icon "><i class="icofont-plus "></i></span>
+                                            <span class="ns-team-social-minus ns-team-social-btn-icon "><i class="icofont-minus "></i></span>
+                                        </div>
+                                        <div class="ns-team-social-icon ">
+                                            <ul>
+                                                <li><a href="# "><i class="fab fa-facebook-f "></i></a></li>
+                                                <li><a href="# "><i class="fab fa-twitter "></i></a></li>
+                                                <li><a href="# "><i class="fab fa-instagram "></i></a></li>
+                                                <li><a href="# "><i class="fab fa-behance "></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="ns-team-item-info ">
+                                        <h5 class="ns-team-info-title "><a href="team-details.html ">Sandeep Kumar</a></h5>
+                                        <span>Manager</span>
+                                    </div>
+                                    <div class="ns-team-item-contact ">
+                                        <!--<a href="tel:+015545454 "><i class="icofont-phone "></i>+015545454</a>
+                                        <a href="mailto:info@mail.com "><i class="icofont-envelope-open "></i>info@mail.com</a>-->
+                                    </div>
+                                </div>
+                                <span class="ns-team-shape-1 ns-team-shape "></span>
+                                <span class="ns-team-shape-2 ns-team-shape "></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="ns-team-item ">
+                                <div class="ns-team-item-img w_img ">
+                                    <a href="team-details.html "><img src="assets/img/team/abha.jpeg " alt=" "></a>
+                                </div>
+                                <div class="ns-team-item-content ">
+                                    <div class="ns-team-social ">
+                                        <div class="ns-team-social-btn ">
+                                            <span class="ns-team-social-plus ns-team-social-btn-icon "><i class="fal fa-plus "></i></span>
+                                            <span class="ns-team-social-minus ns-team-social-btn-icon "><i class="fal fa-minus "></i></span>
+                                        </div>
+                                        <div class="ns-team-social-btn d-none ">
+                                            <span class="ns-team-social-plus ns-team-social-btn-icon "><i class="icofont-plus "></i></span>
+                                            <span class="ns-team-social-minus ns-team-social-btn-icon "><i class="icofont-minus "></i></span>
+                                        </div>
+                                        <div class="ns-team-social-icon ">
+                                            <ul>
+                                                <li><a href="# "><i class="fab fa-facebook-f "></i></a></li>
+                                                <li><a href="# "><i class="fab fa-twitter "></i></a></li>
+                                                <li><a href="# "><i class="fab fa-instagram "></i></a></li>
+                                                <li><a href="# "><i class="fab fa-behance "></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="ns-team-item-info ">
+                                        <h5 class="ns-team-info-title "><a href="team-details.html ">Abha</a></h5>
+                                        <span>Business Development Manager</span>
+                                    </div>
+                                    <div class="ns-team-item-contact ">
+                                        <!--<a href="tel:+015545454 "><i class="icofont-phone "></i>+015545454</a>
+                                        <a href="mailto:info@mail.com "><i class="icofont-envelope-open "></i>info@mail.com</a>-->
+                                    </div>
+                                </div>
+                                <span class="ns-team-shape-1 ns-team-shape "></span>
+                                <span class="ns-team-shape-2 ns-team-shape "></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ns-team-bottom mt-50 ">
+                        <div class="ns-team-pagination "></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- team area end -->
+        <!-- Our Strategy start -->
+        <div>
+            <div style="text-align: center;position: relative;margin-bottom: 48px; width: 100%;font-weight: 600;text-transform: uppercase;color: orange; font-size: 28px;text-decoration: solid underline;">Our Strategy</div>
+            <img src="assets/img/bg/strategy_video.jpg" alt="" style="width: 80%;position: relative;margin-left: 10%;margin-right: 10%;height: 450px;">
+        </div>
+
+
+        <!-- Our Strategy end -->
+
+        <!-- brand area start -->
+        <div class="ns-brand-area pt-80 pb-80 ">
+            <div>
+                <h2 style="height: 20px; width: 100%; text-align:center; margin-bottom: 100px;margin-top: 0px;color: orange; ">Our Clients</h2>
+            </div>
+            <div class="container ">
+                <div class="brand-active swiper-container ">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide ">
+                            <div class="ns-brand-item ">
+                                <img class="ns-brand-item-img " src="assets/img/brand/pw.png" alt="Not Found ">
+                                <img class="ns-brand-item-img-hover " src="assets/img/brand/pw.png" alt="Not Found ">
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="ns-brand-item ">
+                                <img class="ns-brand-item-img " src="assets/img/brand/brand.webp" alt="Not Found ">
+                                <img class="ns-brand-item-img-hover " src="assets/img/brand/brand.webp " alt="Not Found ">
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="ns-brand-item ">
+                                <img class="ns-brand-item-img " src="assets/img/brand/toppr.png " alt="Not Found ">
+                                <img class="ns-brand-item-img-hover " src="assets/img/brand/toppr.png " alt="Not Found ">
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="ns-brand-item ">
+                                <img class="ns-brand-item-img " src="assets/img/brand/unacademy.png" alt="Not Found ">
+                                <img class="ns-brand-item-img-hover " src="assets/img/brand/unacademy.png " alt="Not Found ">
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="ns-brand-item ">
+                                <img class="ns-brand-item-img " src="assets/img/brand/vedantu.png" alt="Not Found ">
+                                <img class="ns-brand-item-img-hover " src="assets/img/brand/vedantu.png" alt="Not Found ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- brand area end -->
+
+        <!-- project area start -->
+        <section class="ns-project-area pt-110 pb-115 ">
+            <img class="ns-project-bg " src="assets/img/project/bg-project.jpg " alt="Not Found ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-12 ">
+                        <div class="ns-section mb-50 text-center ">
+                            <span class="ns-section-subtitle ">Our Project</span>
+                            <h2 class="ns-section-title mb-0 ">Our Some Recently Completed Projects</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" container-custom-1 container ">
+                <div class="ns-project-wrap ">
+                    <div class="project-active swiper-container ">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide ">
+                                <div class="ns-project-item ">
+                                    <div class="ns-project-img w_img ">
+                                        <img src="assets/img/project/book authering.png " alt="Not Found ">
+                                    </div>
+                                    <div class="ns-project-content ">
+                                        <div class="ns-project-content-info ">
+                                            <h4 class="ns-project-content-title "><a href="project-details.html ">Ed-tech</a></h4>
+                                            <span>Book Authering</span>
+                                        </div>
+                                        <div class="ns-project-content-btn ">
+                                            <a href="project-details.html "><i class="fas fa-chevron-circle-right "></i></a>
+                                        </div>
+                                    </div>
+                                    <span class="ns-project-shape-1 ns-project-shape "></span>
+                                    <span class="ns-project-shape-2 ns-project-shape "></span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class="ns-project-item ">
+                                    <div class="ns-project-img w_img ">
+                                        <img src="assets/img/project/video.png" alt="Not Found ">
+                                    </div>
+                                    <div class="ns-project-content ">
+                                        <div class="ns-project-content-info ">
+                                            <h4 class="ns-project-content-title "><a href="project-details.html ">Ed-tech</a></h4>
+                                            <span>Video Solutions</span>
+                                        </div>
+                                        <div class="ns-project-content-btn ">
+                                            <a href="project-details.html "><i class="fas fa-chevron-circle-right "></i></a>
+                                        </div>
+                                    </div>
+                                    <span class="ns-project-shape-1 ns-project-shape "></span>
+                                    <span class="ns-project-shape-2 ns-project-shape "></span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class="ns-project-item ">
+                                    <div class="ns-project-img w_img ">
+                                        <img src="assets/img/project/tbs.png " alt="Not Found ">
+                                    </div>
+                                    <div class="ns-project-content ">
+                                        <div class="ns-project-content-info ">
+                                            <h4 class="ns-project-content-title "><a href="project-details.html ">Ed-tech</a></h4>
+                                            <span>Text Book Solutions</span>
+                                        </div>
+                                        <div class="ns-project-content-btn ">
+                                            <a href="project-details.html "><i class="fas fa-chevron-circle-right "></i></a>
+                                        </div>
+                                    </div>
+                                    <span class="ns-project-shape-1 ns-project-shape "></span>
+                                    <span class="ns-project-shape-2 ns-project-shape "></span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class="ns-project-item ">
+                                    <div class="ns-project-img w_img ">
+                                        <img src="assets/img/project/livetutoring.png " alt="Not Found ">
+                                    </div>
+                                    <div class="ns-project-content ">
+                                        <div class="ns-project-content-info ">
+                                            <h4 class="ns-project-content-title "><a href="project-details.html ">Ed-tech</a></h4>
+                                            <span>Live Tutoring</span>
+                                        </div>
+                                        <div class="ns-project-content-btn ">
+                                            <a href="project-details.html "><i class="fas fa-chevron-circle-right "></i></a>
+                                        </div>
+                                    </div>
+                                    <span class="ns-project-shape-1 ns-project-shape "></span>
+                                    <span class="ns-project-shape-2 ns-project-shape "></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ns-project-pagination mt-50 "></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- project area end -->
+
+
+        <!-- testimonial area start -->
+        <section class="ns-testimonial-area-2 pt-115 pt-lg-0 ">
+            <img class="ns-testimonial-2-shape-2 d-none d-lg-block " src="assets/img/testimonial/home-2_shape-2.png " alt=" ">
+            <div class="container ">
+                <div class="ns-testimonial-inner-2 ">
+                    <div class="row align-items-center ">
+                        <div class="col-xl-5 col-lg-5 ">
+                            <div class="ns-testimonial-img-2 mb-40 mb-lg-0 ">
+                                <div class="ns-testimonial-2-img-1 ">
+                                    <div class="swiper-container testimonial-thumb ">
+                                        <div class="swiper-wrapper ">
+                                            <div class="swiper-slide ">
+                                                <div class="ns-testimonial-2-img-2 ">
+                                                    <img src="assets/img/testimonial/himanshi.jpeg" alt=" ">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide ">
+                                                <div class="ns-testimonial-2-img-2 ">
+                                                    <img src="assets/img/testimonial/mohan.jpeg" alt=" ">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide ">
+                                                <div class="ns-testimonial-2-img-2 ">
+                                                    <img src="assets/img/testimonial/zoe.jpeg" alt=" ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="ns-testimonial-2-shape-1 " src="assets/img/testimonial/home-2_shape-1.png " alt=" ">
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 ">
+                            <div class="ns-testimonial-wrap-2 ">
+                                <div class="swiper-container testimonial-active ">
+                                    <div class="swiper-wrapper ">
+                                        <div class="swiper-slide ">
+                                            <div class="ns-testimonial-content ">
+                                                <img src="assets/img/testimonial/qoute-3.png" alt="Not Found ">
+                                                <p>Amazing Place to work with coperative and supportive team members.Everyone here ready to give a helping hand if required.</p>
+                                                <div class="ns-testimonial-admin ">
+                                                    <h4 class="ns-testimonial-admin-title ">
+                                                        Himanshi
+                                                    </h4>
+                                                    <span>Educator</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide ">
+                                            <div class="ns-testimonial-content ">
+                                                <img src="assets/img/testimonial/qoute-3.png " alt="Not Found ">
+                                                <p>Happy to be a part of Muenot family.It Provide quality education and mindful learning which help in the exclusive growth of learners and educators.</p>
+                                                <div class="ns-testimonial-admin ">
+                                                    <h4 class="ns-testimonial-admin-title ">
+                                                        Mohan
+                                                    </h4>
+                                                    <span>Educator</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide ">
+                                            <div class="ns-testimonial-content ">
+                                                <img src="assets/img/testimonial/qoute-3.png" alt="Not Found ">
+                                                <p>I am truly impressed by the work ethic.It's a well organised out standing and prestigious company.It's a fantastic platform to explore and impart knowledge.</p>
+                                                <div class="ns-testimonial-admin ">
+                                                    <h4 class="ns-testimonial-admin-title ">
+                                                        Zoha
+                                                    </h4>
+                                                    <span>Educator</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ns-testimonial-pagination mt-30 "></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial area end -->
+
+
+
+        <!-- blog area start -->
+        <!-- <section class="ns-blog-area pt-110 pb-115 ">
+            <img src="assets/img/blog/blog-shape-1.png " alt="Not Found " class="ns-blog-bg-shape-1 ns-blog-shape-bg ">
+            <img src="assets/img/blog/blog-shape-2.png " alt="Not Found " class="ns-blog-bg-shape-2 ns-blog-shape-bg ">
+            <img src="assets/img/blog/blog-shape-3.png " alt="Not Found " class="ns-blog-bg-shape-3 ns-blog-shape-bg ">
+            <img src="assets/img/blog/blog-shape-4.png " alt="Not Found " class="ns-blog-bg-shape-4 ns-blog-shape-bg ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-12 ">
+                        <div class="ns-section mb-50 text-center ">
+                            <span class="ns-section-subtitle ">Largest Blog</span>
+                            <h2 class="ns-section-title mb-0 ">Our largest News Blog</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container blog-active ">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide ">
+                            <div class="ns-blog-item ">
+                                <div class="ns-blog-img w_img ">
+                                    <a href="blog-details.html "><img src="assets/img/blog/blog-1.jpg " alt="Not Found "></a>
+                                    <span class="ns-blog-tag ">Business</span>
+                                    <span class="ns-blog-img-shape-1 "></span>
+                                    <span class="ns-blog-img-shape-2 "></span>
+                                </div>
+                                <div class="ns-blog-content ">
+                                    <div class="ns-blog-content-meta "><span class="ns-blog-admin ">By: <a href="# ">Admin</a></span><span class="ns-blog-date ">January 6, 2022</span></div>
+                                    <h3 class="ns-blog-content-title "><a href="blog-details.html ">We are best It
+                                            solution company</a></h3>
+                                    <p>World’s best organizations, for 19+ years and runninh...</p>
+                                    <a href="blog-details.html " class="ns-blog-btn ">Read More<i class="icofont-plus "></i></a>
+                                    <span class="ns-blog-shape-1 "></span>
+                                    <span class="ns-blog-shape-2 "></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="ns-blog-item ">
+                                <div class="ns-blog-img w_img ">
+                                    <a href="blog-details.html "><img src="assets/img/blog/blog-2.jpg " alt="Not Found "></a>
+                                    <span class="ns-blog-tag ">Business</span>
+                                    <span class="ns-blog-img-shape-1 "></span>
+                                    <span class="ns-blog-img-shape-2 "></span>
+                                </div>
+                                <div class="ns-blog-content ">
+                                    <div class="ns-blog-content-meta "><span class="ns-blog-admin ">By: <a href="# ">Admin</a></span><span class="ns-blog-date ">January 6, 2022</span></div>
+                                    <h3 class="ns-blog-content-title "><a href="blog-details.html ">5 Ways Technology Has Improved Today</a></h3>
+                                    <p>World’s best organizations, for 19+ years and runninh...</p>
+                                    <a href="blog-details.html " class="ns-blog-btn ">Read More<i class="icofont-plus "></i></a>
+                                    <span class="ns-blog-shape-1 "></span>
+                                    <span class="ns-blog-shape-2 "></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="ns-blog-item ">
+                                <div class="ns-blog-img w_img ">
+                                    <a href="blog-details.html "><img src="assets/img/blog/blog-3.jpg " alt="Not Found "></a>
+                                    <span class="ns-blog-tag ">Business</span>
+                                    <span class="ns-blog-img-shape-1 "></span>
+                                    <span class="ns-blog-img-shape-2 "></span>
+                                </div>
+                                <div class="ns-blog-content ">
+                                    <div class="ns-blog-content-meta "><span class="ns-blog-admin ">By: <a href="# ">Admin</a></span><span class="ns-blog-date ">January 6, 2022</span></div>
+                                    <h3 class="ns-blog-content-title "><a href="blog-details.html ">Wireless Technology is Change Business</a></h3>
+                                    <p>World’s best organizations, for 19+ years and runninh...</p>
+                                    <a href="blog-details.html " class="ns-blog-btn ">Read More<i class="icofont-plus "></i></a>
+                                    <span class="ns-blog-shape-1 "></span>
+                                    <span class="ns-blog-shape-2 "></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ns-blog-pagination mt-50 "></div>
+                </div>
+            </div>
+        </section> -->
+        <!-- blog area end -->
+
+        <!-- newsletter area start -->
+        <div class="ns-newsletter-area ns-newsletter-area-2 pt-140 ">
+            <div class="container ">
+                <div class="ns-newsletter-wrap ">
+                    <div class="ns-newsletter-icon ">
+                        <img src="assets/img/newsletter/newsletter-icon.png " alt="Not Found ">
+                    </div>
+                    <div class="ns-newsletter-inner ">
+                        <img src="assets/img/newsletter/map.png " alt="Not Found " class="ns-newsletter-shape-3 ">
+                        <img src="assets/img/newsletter/shape-1.png " alt="Not Found " class="ns-newsletter-shape-1 ">
+                        <img src="assets/img/newsletter/shape-2.png " alt="Not Found " class="ns-newsletter-shape-2 ">
+                        <div class="row align-items-center ">
+                            <div class="col-xl-6 col-lg-6 ">
+                                <div class="ns-newsletter-content mb-30 ">
+                                    <h3 class="ns-newsletter-title ">
+                                        News Letter to connect with Us
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 ">
+                                <div class="ns-newsletter-input mb-30 ">
+                                    <input type="email " placeholder="Your Email ">
+                                    <button class="ns-newsletter-btn " type="submit ">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- newsletter area end -->
+    </main>
+
+    <!-- footer area start -->
+    <footer class="ns-footer-area ns-footer-area-2 bg-default " data-background="assets/img/footer/footer-bg-1.png ">
+        <img src="assets/img/footer/footer-shape-1.png " alt="Not Found " class="ns-footer-shape-1 ns-footer-shape ">
+        <img src="assets/img/footer/footer-map.png " alt="Not Found " class="ns-footer-shape-2 ns-footer-shape ">
+        <div class="ns-footer-top pt-220 pb-15 ">
+            <div class="container ">
+                <div class="row justify-content-between ">
+                    <div class="col-xl-3 col-lg-5 col-md-6 ">
+                        <div class="ns-footer-widget mb-40 ">
+                            <div class="ns-footer-logo ">
+                                <a href="index.html "><img src="assets/img/logo/logo-1.png " alt="Not Found "></a>
+                            </div>
+                            <p class="ns-footer-widget-text " style="text-align: left;">
+                                Our Experienced Professionals can help you achieve your goals.
+                            </p>
+                            <div class="ns-footer-social ">
+                                <a href="# "><i class="fab fa-facebook-f "></i></a>
+                                <a href="# "><i class="fab fa-twitter "></i></a>
+                                <a href="# "><i class="fab fa-linkedin-in "></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-5 col-md-5 ">
+                        <div class="ns-footer-widget mb-40 ">
+                            <h3 class="ns-footer-widget-title ">Quick Links</h3>
+                            <div class="ns-footer-widget-list ">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="itservices.html">IT Services</a></li>
+                                    <li><a href="edtech.html">Ed-tech Services</a></li>
+                                    <li><a href="editorial.html">Editorial Services</a></li>
+                                    <li><a href="localization.html">Localization Services</a></li>
+                                    <li><a href="media.html">Accessibility Services</a></li>
+                                    <li><a href="financial.html">Financial Services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-5 col-md-6 ">
+                        <div class="ns-footer-widget mb-40 ">
+                            <h3 class="ns-footer-widget-title ">Our Contacts</h3>
+                            <div class="ns-footer-widget-contact ">
+                                <p>Adress: Jhunjhunu India</p>
+                                <div class="ns-footer-widget-contact-info mb-15 ">
+                                    <span>Phone:<a href="tel:+81440456782 ">+91 6377809826</a></span>
+                                    <span>Fax:<a href="tel:+8846512456788 ">+91 6377809826</a></span>
+                                </div>
+                                <div class="ns-footer-widget-contact-info ">
+                                    <span>Email:<a href="mailto:example@mail.com ">contact@muenot.co.in</a></span>
+                                    <span>Website:<a href="# "> muenot.co.in</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-5 col-md-5 ">
+                        <div class="ns-footer-widget mb-40 ">
+                            <h3 class="ns-footer-widget-title ">Recent Post</h3>
+                            <div class="ns-footer-widget-post mb-20 ">
+                                <div class="ns-footer-widget-post-img w_img ">
+                                    <a href="blog-details.html "><img src="assets/img/footer/post-1.png " alt="Not Found "></a>
+                                </div>
+                                <div class="ns-footer-widget-post-content ">
+                                    <span>23 jun 2022</span>
+                                    <h5 class="ns-footer-widget-post-title "><a href="blog-details.html ">Get around easily
+                                            Ed-Tech services</a></h5>
+                                </div>
+                            </div>
+                            <div class="ns-footer-widget-post ">
+                                <div class="ns-footer-widget-post-img w_img ">
+                                    <a href="blog-details.html "><img src="assets/img/footer/post-2.png " alt="Not Found "></a>
+                                </div>
+                                <div class="ns-footer-widget-post-content ">
+                                    <span>23 jun 2022</span>
+                                    <h5 class="ns-footer-widget-post-title "><a href="blog-details.html ">Get around easily
+                                            IT services</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="ns-footer-copyright ">
+                <div class="row ">
+                    <div class="col-xl-6 col-md-6 col-sm-7 ">
+                        <div class="ns-footer-copyright-text ">
+                            <p>Copyright &copy;<span>Muenot</span> all rights reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6 col-sm-5 ">
+                        <div class="ns-footer-copyright-menu text-end ">
+                            <ul>
+                                <li><a href="about.html ">Privacy</a></li>
+                                <li><a href="about.html ">Policy</a></li>
+                                <li><a href="about.html ">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- JS here -->
+    <script src="assets/js/jquery.min.js "></script>
+    <script src="assets/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/js/swipper-bundle.min.js "></script>
+    <script src="assets/js/jquery.meanmenu.min.js "></script>
+    <script src="assets/js/wow.min.js "></script>
+    <script src="assets/js/jquery.nice-select.min.js "></script>
+    <script src="assets/js/jquery.scrollUp.min.js "></script>
+    <script src="assets/js/jquery.magnific-popup.min.js "></script>
+    <script src="assets/js/odometer.min.js "></script>
+    <script src="assets/js/appear.min.js "></script>
+    <script src="assets/js/main.js "></script>
+
+
+</body>
+
 </html>
